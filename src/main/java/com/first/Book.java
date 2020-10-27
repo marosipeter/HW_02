@@ -3,7 +3,8 @@ package com.first;
 public class Book {
 
     private String title; //instead of name
-    private String author; //tried to link it with the name components from Person; errors; requesting that e.g. firstName to be static, but that would mean that ALL person objects would have the same first name
+    //private String author; //tried to link it with the name components from Person; errors; requesting that e.g. firstName to be static, but that would mean that ALL person objects would have the same first name
+    private Person author;
     private int pageNumber;
     private boolean eBookAvailable;
     private String isbn; //The International Standard Book Number (ISBN) is a 13-digit number that
@@ -29,7 +30,7 @@ public class Book {
     }
 
     //full constructor created automatically with the Alt+Insert method
-    public Book(String title, String author, int pageNumber, boolean eBookAvailable, String isbn) {
+    public Book(String title, Person author, int pageNumber, boolean eBookAvailable, String isbn) {
         this.title = title;
         this.author = author;
         this.pageNumber = pageNumber;
@@ -38,7 +39,7 @@ public class Book {
     }
 
     //third constructor excluding non-mandatory fields like pageNumber and eBookAvailable
-    public Book(String title, String author, String isbn) {
+    public Book(String title, Person author, String isbn) {
         this.title = title;
         this.author = author;
         this.isbn = isbn;
@@ -59,11 +60,11 @@ public class Book {
         this.title = title;
     }
 
-    public String getAuthor() {
+    public Person getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Person author) {
         this.author = author;
     }
 
