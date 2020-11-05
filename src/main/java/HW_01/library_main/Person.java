@@ -1,4 +1,4 @@
-package com.first;
+package HW_01.library_main;
 
 /*
 class created to satisfy the (weak) COMPOSITION requirement, by being referenced
@@ -10,7 +10,7 @@ public class Person {
 
 
     private String firstName;
-    private String middleName;
+    private String middleName = ""; //initialized with empty string, to somewhat solve the missing middle name issue for the author of the novel; but not perfect, workaround, as the full name chain will still have an extre _space_ in it
     private String lastName;
     private int birthYear;
     private boolean hasPHD;
@@ -21,7 +21,7 @@ public class Person {
     }
 
     //full constructor
-    public Person (String firstName, String middleName, String lastName, int birthYear, boolean hasPHD){
+    public Person(String firstName, String middleName, String lastName, int birthYear, boolean hasPHD) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -31,7 +31,7 @@ public class Person {
     }
 
     //constructor for the case wen the Person has no middleName, and the birthYear and hasPHD are not important
-    public Person (String firstName, String lastName){
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

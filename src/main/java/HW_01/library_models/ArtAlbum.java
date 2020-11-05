@@ -1,10 +1,16 @@
-package com.second;
+package HW_01.library_models;
 
-import com.first.Book;
+import HW_01.library_main.Book;
 
-public class Album extends Book {
+public class ArtAlbum extends Book {
     private String paperQuality;
     private boolean forAdultsOnly;
+
+    //for testing the super keyword
+    public double calculatePrice() {
+        double price = super.calculatePrice();
+        return price * 0.9;
+    }
 
     public String getPaperQuality() {
         return paperQuality;
