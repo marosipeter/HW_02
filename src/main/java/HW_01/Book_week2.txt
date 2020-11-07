@@ -1,0 +1,9 @@
+Homework / Requirements
+
+Create a small application that mimics a library catalog (it's own main method). The project should be done using 2 new packages (one for the main class and one for the models) The purpose of this is to be more aware of the basics of access modifiers in Java. It needs to be able to add books, delete books and list books (this is mostly for testing purposes, you can use a similar List as created in class). Books are of two kinds (minimum): novels and art albums. They both have names and number of pages (more attributes can be used if you consider relevant). Novels have type (like mystery, sf, etc.), while albums have paper quality.
+
+Model these entities (book, novel, album) with different classes and inheritance.
+
+Purpose of this homework:
+
+- Understanding the OOP concepts, try illustrating them in the implementation details as you consider appropriate: Abstraction, Encapsulation, Composition, Inheritance, Polymorphism. Please use / define scenarios for each OOP principle.
