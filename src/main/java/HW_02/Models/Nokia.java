@@ -1,4 +1,11 @@
 package HW_02.Models;
 
-public class Nokia extends Phone{
+public abstract class Nokia extends Phone{
+
+    Nokia(){
+        super();
+        this.setManufacturer("Microsoft");
+        this.setOperatingSystem("Windows");
+    }
+
 }

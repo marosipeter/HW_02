@@ -53,8 +53,7 @@ public class Library {
 
         System.out.println("\n*** Testing the List ***");
 
-
-                List<Book> books = new ArrayList<>();
+        List<Book> books = new ArrayList<>();
         List<Novel> novels = new ArrayList<>();
         Book firstBook = new Book();
         Novel secondNovel = new Novel();
@@ -69,8 +68,8 @@ public class Library {
         books.add(secondArtAlbum);
         //books.add(firstPerson); //a Person object can not be added to the List of Book objects
 
-        for (Book book : books){
-            System.out.print(book.toString()+", ");
+        for (Book book : books) {
+            System.out.print(book.toString() + ", ");
         }
         System.out.println("\n");
 
@@ -81,10 +80,9 @@ public class Library {
 
         //testing the effect of the super keyword, used in the ArtAlbum
         System.out.println("\n*** Testing the super keyword just for fun, not related to the homework ***");
-        System.out.println("Price of the "+ firstArtAlbum.getTitle() +" is " + firstArtAlbum.calculatePrice() + " $"); //is it still possible to call the parent's method, from a child, if we have overridden it? NO!
-                                                            // unless we create a ArtAlbum thirdArtAlbum = new Book();
-        System.out.println("Price of the "+ firstNovel.getTitle() +" is " + firstNovel.calculatePrice() + " $");
-
+        System.out.println("Price of the " + firstArtAlbum.getTitle() + " is " + firstArtAlbum.calculatePrice() + " $"); //is it still possible to call the parent's method, from a child, if we have overridden it? NO!
+        // unless we create a ArtAlbum thirdArtAlbum = new Book();
+        System.out.println("Price of the " + firstNovel.getTitle() + " is " + firstNovel.calculatePrice() + " $");
 
     }
 

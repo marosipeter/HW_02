@@ -1,8 +1,12 @@
 package HW_02.Models;
 
-public class Samsung extends Phone{
+public abstract class Samsung extends Phone {
 
-    private Samsung() {
-
+    Samsung () {
+        super();
+        this.setManufacturer("Samsung");
+        this.setOperatingSystem("Android");
     }
+
+
 }
