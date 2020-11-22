@@ -1,0 +1,26 @@
+Requirements:
+
+1. You need to store Person in a TreeSet. Define 2 Comparators (one for name and one for age) that will be used when creating the TreeSet; (check one of the ways you can use Comparators in Java)
+
+Add people to the TreeSet; iterate through the TreeSet and print the name and the age;
+NOTE: if you are using a Comparator, the class Person should not implement Comparable anymore.
+
+2. You need to store some information about some people: for one person, you need a list of his/her hobbies;
+
+Define for Hobby a class that contains:
+
+    Name of hobby (String) – ex: cycling, swimming
+    Frequency (int) – how many times a week they practice it
+    List of Addresses where this hobby can be practiced (List<Address>)
+
+You will use a HashMap
+
+<Person, List<Hobby>>
+
+NOTE: equals() from Person must be overridden
+
+Add some information to this map; for a certain Person, print the names of the hobbies and the countries where it can be practiced
+
+DEFINE CLASSES: PERSON, EMPLOYEE, STUDENT; ADDRESS; COUNTRY; (connect them as you consider relevant)
+
+- try adding an enum in the equations and see how it works

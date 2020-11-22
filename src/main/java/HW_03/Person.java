@@ -1,24 +1,56 @@
 package HW_03;
 
-public abstract class Person {
+import java.util.Objects;
 
-    private String name;
-    private int age;
+public class Person{
 
-    public Person(String name, int age) {
-        this.name = name;
+    private String firstName;
+    private String lastName;
+    private int age; //the comparator needed the wrapper to be able to use the compareTo
+
+    public Person(String firstName, String lastName, int age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.age = age;
     }
 
-    public String getName(){
-        return name;
+    public String getFirstName(){
+        return firstName;
     }
 
-    public abstract void hello() ;
-
-    public static void szia(){
-        System.out.println("Szia Person!");
+    public String getLastName(){
+        return lastName;
     }
 
+    public int getAge(){
+        return age;
+    }
 
+    @Override
+    public String toString() {
+        return (this.firstName + " " + this.lastName + " is " + this.age + " years old."); }
+
+        //automatic equals and hashCode override
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age &&
+                Objects.equals(firstName, person.firstName) &&
+                Objects.equals(lastName, person.lastName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, age);
+    }
+
+    // Compare inside the Person
+//public class Person implements Comparable{
+//    @Override
+//    public int compareTo(Object o) {
+//        Person secondPerson = ((Person)o);
+//        return this.getAge()-secondPerson.getAge();
+//    }
 }
