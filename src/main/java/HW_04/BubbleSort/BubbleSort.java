@@ -1,4 +1,4 @@
-package HW_04.Second;
+package HW_04.BubbleSort;
 //based on https://www.geeksforgeeks.org/bubble-sort/
 
 public class BubbleSort {

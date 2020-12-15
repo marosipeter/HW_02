@@ -1,6 +1,5 @@
-package HW_04.First;
+package HW_04.Math;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package HW_04.First;
+package HW_04.Math;
 
 //mostly from https://www.geeksforgeeks.org/print-all-prime-numbers-less-than-or-equal-to-n/
 //but rewritten the chek at line 14
